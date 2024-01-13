@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3341c98f05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id = "header">
+        <div class="container">
+            <nav>
+                <img src="IMAGES/logos.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home </a></li>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#services"> Services </a></li>
+                    <li><a href="#hobbies"> Hobbies </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Vadhini Jhaver</span><br>
+                    from VIT</h1></br></h1>
+
+            </div>
+        </div>
+
+
+    </div>
+<!---------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMAGES/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1><br><br>
+                <div class="text">
+                    <p>My name is Vadhini, and I am doing my Integrated Mtech Software Engineering from VIT,Vellore.
+                        I am a perfectionist and self-motivated person.
+                        I enjoy problem solving in Data Structures and Algorithms.
+                    </p><br>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Language</span><br>Java</li>
+                        <li><span>Educational Courses</span><br>Problem solving in DSA, OS, DBMS, OOPs, Computer Networks,
+                            Software Engineering</li>
+                        <li><span>Softskills</span><br>LeaderShip, Time Management, Effective Communication, Team Work
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Achievements">
+                    <ul>
+                        <li><span>2022-current</span><br>Programme Representative of Integrated Mtech Software Engineering</li>
+                        <li><span>2023</span><br>Merit Scholarship Certificate from VIT</li>
+                        <li><span>2023</span><br>Event coordinator in AIKYA(Cultural fest of VIT)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2020-current</span><br>M.tech. Software Engineering, Vellore Institute Of Technology.<br>Current CGPA: 9.56 till date</li>
+                        <li><span>2018-2020</span><br>FIITJEE World School,Hyderabad<br>Senior Secondary (XII), Science, Percentage: 96.5%</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--------------------services-------------------------------->
+<div class="services">
+    <div class="container">
+        <h1 class=""sub-title"> My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management Systems</h2>
+                <p>Basic concepts of DBMS along with SQL queries and some real time examples.</p>
+                <a href="#">Learn more </a>
+            </div>
+            <div>
+                <i class="fa-brands fa-windows"></i>
+                <h2>Operating Systems</h2>
+                <p>Basic concepts of OS with real time examples </p>
+                <a href="#">Learn more </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code-compare"></i>
+                <h2>Data Structures and Algorithm</h2>
+                <p>Basic concepts of DSA with implementation </p>
+                <a href="#">Learn more </a>
+            </div>
+        </div>
+    </div>    
+</div>
+<!---------------------My hobbies-------------------------------->
+<div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title"> My hobbies</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="IMAGES/work-1.png">
+                <div class="layer">
+                    <h3>Social Media Apps</h3>
+                    <p> These app connects me to talented people all around the world and helps me to grow</p>
+                    <a href="#"><i class="fa-solid fa-link"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="IMAGES/music.png">
+                <div class="layer">
+                    <h3>Music Apps</h3>
+                    <p> Music helps me to calm my mind</p>
+                    <a href="#"><i class="fa-solid fa-music"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="IMAGES/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping Apps</h3>
+                    <p> Helps in exploring wide variety of items and also saves my time</p>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class ="btn"> See more </a>
+    </div>
+</div>
+<!-----------------------------Contact-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>vadhinijhaver@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8374939071</p><br><br>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="IMAGES/my-cv.pdf" download class ="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+     </div> 
+     <div class="copyright">
+        <p>copyright <i class="fa-regular fa-copyright"></i> Vadhini </p>
+     </div>  
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link"); 
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzuYSghnSP5JKWMEnool-F9rbaDJ039jkqjSoqbBp7oiofpcNZpPP-g02aP_0aJKq9W/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
+
+
+<!--
+    1. BOX MODEL
+    2. POSITION RELATIVE AND ABSOLUTE DIFFERENCES
+    3. FLEX BOX VVVV.IMP
+    4. MEDIA QUERIES -> RESPONSE WEB DESIGN
+    5. JAVASCRIPT -> SINGLE THEREAD, USES EVENT LOOP TO ACHEIVE ASYCHRONOUS NATURE.
+-->
